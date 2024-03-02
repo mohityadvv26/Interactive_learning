@@ -54,10 +54,10 @@
                 <!-- User input for array values -->
                 <label for="arrayInput">Enter array values (comma-separated):</label>
                 <input type="text" id="arrayInput" placeholder="e.g., 20,80,50,30,60">
-        
+
                 <!-- Elements to be sorted -->
                 <div id="elements"></div>
-        
+
                 <!-- Controls -->
                 <div class="controls">
                     <button onclick="startBubbleSorting()">Start Sorting</button>
@@ -67,20 +67,71 @@
                     <input type="range" min="1" max="1000" value="500" id="speed" onchange="adjustSpeed(this.value)">
                 </div>
             </div>
-            
+            <br><br>
+            <!-- MCQ Section -->
+            <div class="mcq-section">
+                <h2>Multiple Choice Questions</h2>
+                <ol>
+                    <li>What is the time complexity of bubble sort in the worst-case scenario?</li>
+                    <ul>
+                        <li><input type="radio" name="q1" value="a"> O(n)</li>
+                        <li><input type="radio" name="q1" value="b"> O(n^2)</li>
+                        <li><input type="radio" name="q1" value="c"> O(log n)</li>
+                        <li><input type="radio" name="q1" value="d"> O(n log n)</li>
+                    </ul>
+                    <li>What is the best-case time complexity of bubble sort?</li>
+                    <ul>
+                        <li><input type="radio" name="q2" value="a"> O(n log n)</li>
+                        <li><input type="radio" name="q2" value="b"> O(n)</li>
+                        <li><input type="radio" name="q2" value="c"> O(log n)</li>
+                        <li><input type="radio" name="q2" value="d"> O(n^2)</li>
+                    </ul>
+                    <li>Bubble Sort is an example of a sorting algorithm that:</li>
+                    <ul>
+                        <li><input type="radio" name="q3" value="a"> Uses divide and conquer strategy</li>
+                        <li><input type="radio" name="q3" value="b"> Uses dynamic programming</li>
+                        <li><input type="radio" name="q3" value="c"> Swaps adjacent elements directly</li>
+                        <li><input type="radio" name="q3" value="d">Only works with integers</li>
+                    </ul>
+                    <li>In Bubble Sort, after each pass, the largest element among the unsorted elements 'bubbles up' to which position?</li>
+                    <ul>
+                        <li><input type="radio" name="q4" value="a"> First</li>
+                        <li><input type="radio" name="q4" value="b"> Last</li>
+                        <li><input type="radio" name="q4" value="c"> Middle</li>
+                        <li><input type="radio" name="q4" value="d"> Can't say</li>
+                    </ul>
+                    <li>Arrange the following items in ascending order using Bubble Sort. What is the intermediate sequence of 37, 54, 21, 85, 68, 12, 9, and 57 after the second pass?</li>
+                    <ul>
+                        <li><input type="radio" name="q5" value="b">21, 37, 54, 12, 9, 57, 68, 85</li>
+                        <li><input type="radio" name="q5" value="a"> 21, 37, 12, 9, 54, 57, 68, 85</li>
+                        <li><input type="radio" name="q5" value="c"> 37, 21, 54, 68, 12, 9, 57, 85</li>
+                        <li><input type="radio" name="q5" value="d"> 21, 12, 9, 37, 54, 57, 68, 85</li>
+                    </ul>
+                    <li>How many passes are required for sorting 8 elements using bubble sorting for elements: 21, 37, 54, 12, 9, 57, 68, 85 ?</li>
+                    <ul>
+                        <li><input type="radio" name="q6" value="b">0</li>
+                        <li><input type="radio" name="q6" value="a"> 9</li>
+                        <li><input type="radio" name="q6" value="c"> 8</li>
+                        <li><input type="radio" name="q6" value="d"> 7</li>
+                    </ul>
+                </ol>
+                <button onclick="submitAnswers()">Submit Answers</button>
+                <div id="quizResult"></div>
+            </div>
+
         </div>
         <div id="function2-content" style="display: none;">
-            
+
         </div>
         <div id="function3-content" style="display: none;">
             <div class="container">
                 <!-- User input for array values -->
                 <label for="arrayInput">Enter array values (comma-separated):</label>
                 <input type="text" id="arrayInput" placeholder="e.g., 20,80,50,30,60">
-        
+
                 <!-- Elements to be sorted -->
                 <div id="elements"></div>
-        
+
                 <!-- Controls -->
                 <div class="controls">
                     <button onclick="startSelectionSorting()">Start Sorting</button>
@@ -91,7 +142,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Add more content sections for other functions -->
     </div>
 

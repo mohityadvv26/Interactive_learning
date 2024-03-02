@@ -196,5 +196,35 @@ let speed = 500; // Initial speed of sorting animation
         // Call createElements() initially
         createElements();
 
+// Submit answers to the MCQs
+function submitAnswers() {
+    const correctAnswers = {
+        q1: 'c',
+        q2: 'b',
+        q3: 'b',
+        q4: 'c',
+        q5: 'b'
+    };
 
+    const userAnswers = {
+        q1: document.querySelector('input[name="q1"]:checked').value,
+        q2: document.querySelector('input[name="q2"]:checked').value,
+        q3: document.querySelector('input[name="q3"]:checked').value,
+        q4: document.querySelector('input[name="q4"]:checked').value,
+        q5: document.querySelector('input[name="q5"]:checked').value
+    };
+
+    let score = 0;
+    for (const question in correctAnswers) {
+        if (userAnswers[question] === correctAnswers[question]) {
+            score++;
+        } else {
+            const incorrectInput = document.querySelector(`input[name="${question}"][value="${userAnswers[question]}"]`);
+            incorrectInput.parentNode.style.color = 'red';
+        }
+    }
+
+    const quizResult = document.getElementById('quizResult');
+    quizResult.textContent = `You scored ${score} out of 5.`;
+}
         
