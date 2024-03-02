@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" type="png" href="../images/icon/favicon.png">
+    <title>Prepare for JEE Mains & Advanced</title>
+    <link rel="stylesheet" type="text/css" href="subjects.css">
+    <!-- <script type="text/javascript" src="../script.js"></script> -->
+    <script type="text/javascript" src="sortjavascript/bubblesort.js"></script>
+    <script type="text/javascript" src="sortjavascript/insertionsort.js"></script>
+    <script type="text/javascript" src="sortjavascript/selectionsort.js"></script>
+    <script type="text/javascript" src="sortjavascript/mergesort.js"></script>
+    <script type="text/javascript" src="../script.js"></script>
+    <script src="subjects.js" defer></script>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+
+    <!-- NAVIGATION -->
+    <header>
+        <div class="nav" id="nav">
+            <div id="learned-logo">
+                <a href="../index.html"><img src="../images/icon/logo.png" style="width: 120px;"></a>
+            </div>
+            <div class="switch-tab" id="switch-tab" onclick="switchTAB()"><img src="../images/icon/menu.png"></div>
+            <ul id="list-switch">
+                <li><a href="../index.html"><img src="../images/courses/paper.png" class="icon">INDEX</a></li>
+
+            </ul>
+
+        </div>
+    </header>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" onclick="showContent('function1')">Bubble Sort</a>
+        <a href="#" onclick="showContent('function2')">Insertion Sort</a>
+        <a href="#" onclick="showContent('function3')">Selection Sort</a>
+        <a href="#" onclick="showContent('function4')">Quick Sort</a>
+        <a href="#" onclick="showContent('function5')">Merge Sort</a>
+        <a href="#" onclick="showContent('function6')">Counting Sort</a>
+        <a href="#" onclick="showContent('function7')">Bucket Sort</a>
+        <a href="#" onclick="showContent('function8')">Radix Sort</a>
+
+    </div>
+    <!-- main content -->
+    <div class="main-content">
+        <div id="function1-content" style="display: none;">
+            <div class="container">
+                <!-- User input for array values -->
+                <label for="arrayInput">Enter array values (comma-separated):</label>
+                <input type="text" id="arrayInput" placeholder="e.g., 20,80,50,30,60">
+        
+                <!-- Elements to be sorted -->
+                <div id="elements"></div>
+        
+                <!-- Controls -->
+                <div class="controls">
+                    <button onclick="startBubbleSorting()">Start Sorting</button>
+                    <button id="pauseButton" onclick="togglePause()" disabled>Pause</button>
+                    <button onclick="reset()">Reset</button>
+                    <label for="speed">Speed:</label>
+                    <input type="range" min="1" max="1000" value="500" id="speed" onchange="adjustSpeed(this.value)">
+                </div>
+            </div>
+            
+        </div>
+        <div id="function2-content" style="display: none;">
+            
+        </div>
+        <div id="function3-content" style="display: none;">
+            <div class="container">
+                <!-- User input for array values -->
+                <label for="arrayInput">Enter array values (comma-separated):</label>
+                <input type="text" id="arrayInput" placeholder="e.g., 20,80,50,30,60">
+        
+                <!-- Elements to be sorted -->
+                <div id="elements"></div>
+        
+                <!-- Controls -->
+                <div class="controls">
+                    <button onclick="startSelectionSorting()">Start Sorting</button>
+                    <button id="pauseButton" onclick="togglePause()" disabled>Pause</button>
+                    <button onclick="reset()">Reset</button>
+                    <label for="speed">Speed:</label>
+                    <input type="range" min="1" max="1000" value="500" id="speed" onchange="adjustSpeed(this.value)">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Add more content sections for other functions -->
+    </div>
+
+    <!-- <script>
+</script> -->
+
+</body>
+
+</html>

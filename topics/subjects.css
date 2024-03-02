@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	background: #FFF;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*SCROLLBAR Styling*/
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #FA4B37;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #DF2771; 
+}
+
+/*NAVIGATION BAR*/
+.nav
+{
+	width: 100%;
+	background-color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 2%;
+	position: fixed;
+	top: 0px;
+	z-index: 10;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+
+.nav li, a, button
+{
+	float: left;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 13px;
+	color: #2E3D49;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+
+.nav ul li img {
+	width: 20px;
+	margin-right: 10px;
+	transform: translateY(5px);
+	padding-top: 5px;
+}
+
+.nav ul li 
+{
+	list-style: none;
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+.nav ul li a
+{
+	transition: all 0.3s ease 0s;
+}
+
+.nav ul li a:hover
+{
+	color: #FA4B37;
+}
+
+.nav button
+{
+	padding: 9px 25px;
+	background: linear-gradient(to right, #FA4B37, #DF2771);
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	transition: all 0.3s ease 0s;
+}
+#srchbtn {
+	padding: 9px 20px;
+}
+#srchbtn img {
+	width: 15px;
+	filter: brightness(100);
+}
+.nav button:hover
+{
+	opacity: .9;
+}
+.nav .search
+{
+	float: right;
+}
+.nav .search .srch
+{
+	font-size: 13px;
+	width: 300px;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid #FA4B37;
+	padding: 9px;
+}
+.nav .search button
+{
+	margin-right: 5px;
+	float: right;
+	margin-left: 10px;
+}
+.nav .switch-tab {
+	cursor: pointer;
+	visibility: hidden;
+}
+.nav .switch-tab img {
+	width: 20px;
+}
+.nav .check-box {
+	cursor: pointer;
+	visibility: hidden;
+}
+
+/* topicslist started*/
+
+ 
+.main-content {
+	margin-top: 70px; /* Adjust this value based on the height of your header */
+	padding-left: 270px; /* Adjust this value to leave space for the sidebar */
+  }
+
+  /* Style for sidebar */
+  .sidebar {
+	height: 100%;
+	width: 250px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #333;
+	padding-top: 20px;
+	margin-top: 70px;
+}
+
+.sidebar a {
+	padding: 10px 15px;
+	text-decoration: none;
+	font-size: 18px;
+	color: white;
+	display: block;
+}
+
+.sidebar a:hover {
+	background-color: #555;
+}
+
+/* Style for main content */
+.main-content {
+	margin-left: 250px; /* Adjust this value according to the width of the sidebar */
+	padding: 20px;
+}
+
+/* Style for the list */
+ul {
+	list-style-type: none;
+	padding: 0;
+  }
+  
+  /* Style for list items */
+  li {
+	padding: 10px;
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #ddd;
+  }
+  
+  /* Style for hover effect */
+  li:hover {
+	background-color: #e0e0e0;
+  }
+ /* CSS styling for the elements to be sorted */
+ .container {
+	margin-top: 50px;
+	text-align: center;
+}
+.element {
+	position: relative;
+	width: 30px;
+	background-color: #007bff;
+	display: inline-block;
+	margin: 0 1px; /* Reduced margin for better visualization */
+	transition: height 0.3s, background-color 0.3s, color 0.3s; /* Added transition for color change */
+	border-radius: 5px 5px 0 0;
+}
+.value {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 12px;
+	color: black; /* Dark black color for array values */
+}
+.index {
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 12px;
+	color: black; /* Dark black color for index */
+}
+.controls {
+	margin-top: 20px;
+}
+button {
+	padding: 10px 20px;
+	font-size: 16px;
+	background-color: #28a745;
+	color: white;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+button:hover {
+	background-color: #218838;
+}
+.highlight {
+	background-color: #ffc107 !important;
+}
+

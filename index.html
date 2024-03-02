@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="images/icon/favicon.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>CodeCraze</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+	</script>
+</head>
+<body>
+<!-- Navigation Bar -->
+<header id="header">
+    <nav>
+        <div class="logo"><img src="images/icon/logo.png" alt="logo"></div>
+        <ul>
+            <li><a class="active" href="">Home</a></li>
+            <li><a href="#team_section">Team</a></li>
+            <li><a href="#services_section">Services</a></li>
+            <li><a href="#contactus_section">Contact</a></li>
+        </ul>
+        <div class="srch"><input type="text" class="search" placeholder="Search here..."><img src="images/icon/search.png" alt="search" onclick=slide()></div>
+        <a class="get-started" href="login.html">Get Started</a>
+        <img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+    </nav>
+    <div class="head-container">
+        <div class="quote">
+            <p>The beautiful thing about learning is that nobody can take it away from you</p>
+            <h5>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and directed research!</h5>
+            <!-- <div class="play">
+                <img src="images/icon/play.png" alt="play"><span><a href="https://www.youtube.com/watch?v=KFyrgDO1WXk" target="_blank">Watch Now</a></span>
+            </div> -->
+        </div>
+        <div class="svg-image">
+            <img src="images/extra/svg1.jpg" alt="svg">
+        </div>
+    </div>
+    <!-- <div class="side-menu" id="side-menu">
+        <div class="close" onclick="sideMenu(1)"><img src="images/icon/close.png" alt=""></div>
+        <div class="user">
+            <img src="images/creator/roshan.jpeg" alt="Username">
+            <p>roshank9419</p>
+        </div>
+        <ul>
+            <li><a href="#about_section">About</a></li>
+            <li><a href="#portfolio_section">Portfolio</a></li>
+            <li><a href="#team_section">Team</a></li>
+            <li><a href="#services_section">Services</a></li>
+            <li><a href="#contactus_section">Contact</a></li>
+            <li><a href="#feedBACK">Feedback</a></li>
+        </ul>
+    </div> -->
+</header>
+
+<!-- Some Popular Subjects -->
+<div class="title">
+    <span>Popular Topics in DSA</span>
+</div>
+<br><br>
+<div class="course">
+    <center><div class="cbox">
+    <div class="det"><a href="topics/sorting.html"><img src="images/courses/book.png">Sorting</a></div>
+    <div class="det"><a href="subjects/gate.html"><img src="images/courses/d1.png">Searching</a></div>
+    <div class="det"><a href="subjects/jee.html#sample_papers"><img src="images/courses/paper.png">Binary Search Tree</a></div>
+    <div class="det"><a href="subjects/quiz.html"><img src="images/courses/d1.png">Linked List</a></div>
+    </div></center>
+    <div class="cbox">
+    <div class="det"><a href="subjects/computer_courses.html"><img src="images/courses/computer.png">Hash Table</a></div>
+    <div class="det"><a href="subjects/computer_courses.html#data"><img src="images/courses/data.png">Binary Heap</a></div>
+    <!-- <div class="det"><a href="subjects/computer_courses.html#algo"><img src="images/courses/algo.png">Algorithm</a></div>  
+    <div class="det det-last"><a href="subjects/computer_courses.html#projects"><img src="images/courses/projects.png">Projects</a></div>   -->
+    </div>
+</div>
+
+<!-- ABOUT -->
+<div class="diffSection" id="about_section">
+    <center><p style="font-size: 50px; padding: 100px">About</p></center>
+    <div class="about-content">
+            <div class="side-image">
+                <img class="sideImage" src="images/extra/e3.jpg">
+            </div>
+            <div class="side-text">
+                <h2>What you think about us ?</h2>
+                <p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and directed research.<br> Educational website can include websites that have games, videos or topic related resources that act as tools to enhance learning and supplement classroom teaching. These websites help make the process of learning entertaining and attractive to the student, especially in today's age. <br>Using HTML(HyperText Markup Language), CSS(Cascading Style Sheet), JavaScript, we can make learning more easier and in a interesting way.</p>
+            </div>
+    </div>
+</div>
+
+
+<!-- TEAM -->
+<div class="diffSection" id="team_section">
+    <center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">We're the Creators</p></center>
+    <div class="totalcard">
+        <div class="card">
+            <center><img src="images/creator/mohit.png"></center>
+            <center><div class="card-title">Mohit Yadav</div>
+            <div id="detail">
+                <!-- <p>“ You can teach a student a lesson for a day; but if you can teach him to learn by creating curiosity, he will continue the learning process as long as he lives “</p> -->
+                <div class="duty"></div>
+                <a href="https://www.linkedin.com/in/mohit-yadav-64651722b//" target="_blank"><button class="btn-roshan">Follow +</button></a>
+            </div>
+            </center>
+        </div>
+        <div class="card">
+            <center><img src="images/creator/sandeep.png"></center>
+            <center><div class="card-title">Sandeep Lakhina</div>
+            <div id="detail">
+                <!-- <p>“ Real education should consist of drawing the goodness and the best out of our own students. What better books can there be than the book of humanity “</p> -->
+                <div class="duty"></div>
+                <a href="https://www.linkedin.com/in/sandeep-lakhina-41b74b23a/" target="_blank"><button class="btn-akhil">Follow +</button></a>
+            </div>
+            </center>
+        </div>
+        <div class="card">
+            <center><img src="images/creator/rachit.png"></center>
+            <center><div class="card-title">Rachit Shokeen</div>
+            <div id="detail">
+                <!-- <p>“ Real education should consist of drawing the goodness and the best out of our own students. What better books can there be than the book of humanity “</p> -->
+                <div class="duty"></div>
+                <a href="https://www.linkedin.com/in/rachit-shokeen-b58196272/" target="_blank"><button class="btn-akhil">Follow +</button></a>
+            </div>
+            </center>
+        </div>
+    </div>
+</div>
+
+<!-- SERVICES -->
+<div class="service-swipe">
+    <div class="diffSection" id="services_section">
+    <center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px; color: #fff;">Services</p></center>
+    </div>
+    <a href="subjects/computer_courses.html"><div class="s-card"><img src="images/icon/computer-courses.png"><p>make classroom interactive</p></div></a>
+</div>
+
+<!-- CONTACT US -->
+<div class="diffSection" id="contactus_section">
+    <center><p style="font-size: 50px; padding: 100px">Contact Us</p></center>
+    <div class="csec"></div>
+    <div class="back-contact">
+        <div class="cc">
+        <form action="mailto:roshank9419@gmail.com" method="post" enctype="text/plain">
+            <label>First Name <span class="imp">*</span></label><label style="margin-left: 185px">Last Name <span class="imp">*</span></label><br>
+            <center>
+            <input type="text" name="" style="margin-right: 10px; width: 175px" required="required"><input type="text" name="lname" style="width: 175px" required="required"><br>
+            </center>
+            <label>Email <span class="imp">*</span></label><br>
+            <input type="email" name="mail" style="width: 100%" required="required"><br>
+            <label>Message <span class="imp">*</span></label><br>
+            <input type="text" name="message" style="width: 100%" required="required"><br>
+            <label>Additional Details</label><br>
+            <textarea name="addtional"></textarea><br>
+            <button type="submit" id="csubmit">Send Message</button>
+        </form>
+        </div>
+    </div>
+</div>
+
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-container">
+        <div class="left-col">
+            <img src="images/icon/logo - Copy.png" style="width: 200px;">
+            <div class="logo"></div>
+            <div class="social-media">
+                <a href="#"><img src="images/icon\fb.png"></a>
+                <a href="#"><img src="images/icon\insta.png"></a>
+                <a href="#"><img src="images/icon\tt.png"></a>
+                <a href="#"><img src="images/icon\ytube.png"></a>
+                <a href="#"><img src="images/icon\linkedin.png"></a>
+            </div><br><br>
+            <p><img src="images/icon/phone.png"> +91-1234567890<br><img src="images/icon/mail.png">&nbsp; minorproject@gmail.com</p>
+        </div>
+        <div class="right-col">
+            <h1 style="color: #fff">Our Newsletter</h1>
+            <div class="border"></div><br>
+            <p>Enter Your Email to get our News and updates.</p>
+            <form class="newsletter-form">
+                <input class="txtb" type="email" placeholder="Enter Your Email">
+                <input class="btn" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
