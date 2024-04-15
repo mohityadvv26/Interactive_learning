@@ -1,0 +1,47 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    display: block;
+}
+
+button {
+    padding: 8px 12px;
+    margin: 0px 8px;
+    min-width: 80px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#controls {
+    position: absolute;
+    padding: 16px;
+    top: 0px;
+    display: flex;
+}
+
+#speed-label, #help-label {
+    line-height: 200%;
+    padding: 0px 8px;
+    color: #EBE9E1;
+    transition: color 0.3s ease;
+}
+
+#speed-slider {
+    width: 100px;
+    margin: 0 8px;
+}
+
+#help-label:hover {
+    color: #FF5722;
+    text-decoration: underline;
+}

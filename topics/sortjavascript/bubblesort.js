@@ -225,6 +225,6 @@ function submitAnswers() {
     }
 
     const quizResult = document.getElementById('quizResult');
-    quizResult.textContent = `You scored ${score} out of 5.`;
+    quizResult.textContent = `You scored ${score} out of 6.`;
 }
         
