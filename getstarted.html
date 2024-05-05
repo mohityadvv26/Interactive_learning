@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Button Redirect Example</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Ensure the body covers the entire viewport height */
+        /* background-color: ; */
+    }
+    .button {
+        padding: 40px 70px; /* Increased padding */
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px; /* Increased border-radius */
+        font-size: 25px; /* Increased font size */
+        margin: 50px; /* Increased margin */
+        text-decoration: none;
+    }
+    /* /////////////////////////////////////////// */
+    
+</style>
+</head>
+<body>
+    <!-- <h1>Button Redirect Example</h1> -->
+    <div>
+        <button class="button" onclick="redirectToStudentLogin()">Student Login</button>
+        <button class="button" onclick="redirectToTeacherLogin()">Teacher Login</button>
+    </div>
+
+    <script>
+        function redirectToStudentLogin() {
+            window.location.href = "student_login.html";
+        }
+
+        function redirectToTeacherLogin() { 
+            window.location.href = "teacher_login.html";
+        }
+    </script>
+</body>
+</html>
