@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Button Redirect Example</title>
+<title>Redirect Page</title>
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -15,6 +15,7 @@
         height: 100vh; /* Ensure the body covers the entire viewport height */
         /* background-color: ; */
     }
+
     .button {
         padding: 40px 70px; /* Increased padding */
         background-color: #007bff;
@@ -39,11 +40,11 @@
 
     <script>
         function redirectToStudentLogin() {
-            window.location.href = "student_login.html";
+            window.location.href = "./Quiz/index.php";
         }
 
         function redirectToTeacherLogin() { 
-            window.location.href = "teacher_login.html";
+            window.location.href = "./Quiz/admin/index.php";
         }
     </script>
 </body>
